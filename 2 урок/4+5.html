@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    use strict;
+    //Случайно в 4 задании сделал задание 5ое, надеюсь зачтете :)
+/**
+* Калькулятор двух значений
+* @param {number} a
+* @param {number} b
+* @param {string} action
+* @returns {number}
+*/
+function calculate(a,b,action){
+switch (action) {
+    case "+":
+        return a+b;
+    case "-":
+        return a-b;
+    case "*":
+        return a*b;
+    case "/":
+        return a/b;
+    default:
+        alert("Введено неверное действие.")
+        break;
+}
+}
+let a,b,action;
+a=Number(prompt("Введите первое число"));
+b=Number(prompt("Введите второе число"));
+action=prompt("Введите действие (+,-,*,/)");
+console.log(calculate(a,b,action));
+</script>
+</body>
+</html>
